@@ -1,12 +1,13 @@
-// Usage in ViewModel
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
+using CommunityToolkit.Mvvm.ComponentModel;
 
-public partial class PlayerViewModel
+public partial class PlayerViewModel : ObservableObject
 {
-    [ObservableProperty]
-    public int Health { get; set; } = 100;
+    [ObservableProperty] private int _health;
 
-    [ObservableProperty]
-    public string PlayerName { get; set; } = "Player";
+    [ObservableProperty] private string _playerName;
+
+    public PlayerViewModel()
+    {
+
+    }
 }
