@@ -2,12 +2,9 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
-    private void Start()
-    {
-        
-    }
+    public MainView mainView;
 
-    private void Update()
+    private void Awake()
     {
         
     }
