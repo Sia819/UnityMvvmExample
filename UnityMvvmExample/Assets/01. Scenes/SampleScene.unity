@@ -1138,9 +1138,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 451ed7acb11c96b479d2926be8dbb1f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resultText: {fileID: 0}
-  displayName: {fileID: 0}
-  applyButton: {fileID: 0}
+  resultText: {fileID: 128361180}
+  displayNameInput: {fileID: 1492646911}
+  applyButton: {fileID: 2067414014}
 --- !u!114 &1595774163
 MonoBehaviour:
   m_ObjectHideFlags: 0
