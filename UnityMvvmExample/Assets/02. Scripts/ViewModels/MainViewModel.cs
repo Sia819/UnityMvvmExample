@@ -11,7 +11,7 @@ namespace UnityMvvmExample.ViewModels
         [RelayCommand]
         private void Apply()
         {
-            DisplayName = Name + "님 안녕하세요";
+            DisplayName = $"Hello, {Name}!";
         }
     }
 }

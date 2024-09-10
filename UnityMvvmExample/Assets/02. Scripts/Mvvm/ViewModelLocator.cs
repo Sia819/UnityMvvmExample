@@ -1,8 +1,8 @@
-using System;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 using UnityMvvmExample.ViewModels;
 
-namespace UnityMvvmExample.Commons
+namespace UnityMvvmExample.Mvvm
 {
     public class ViewModelLocator
     {
