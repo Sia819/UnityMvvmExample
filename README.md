@@ -5,7 +5,7 @@ UnityMvvmExample
 # How was setup?
 
 ## 1. Install Unity Package Manager from Git URL
-- NuGetForUnity : https://github.com/GlitchEnzo/NuGetForUnity.git?path=/src/NuGetForUnity
+- NuGetForUnity : https://github.com/GlitchEnzo/NuGetForUnity.git?path=/src/NuGetForUnity#v4.1.1
 - UniRx : https://github.com/neuecc/UniRx.git?path=Assets/Plugins/UniRx/Scripts
 
 ## 2. Now appeared NuGet in Unity Menu
