@@ -12,16 +12,16 @@ namespace UnityMvvmExample.Mvvm
     public static class TMP_InputFieldProperty
     {
         public static readonly DependencyProperty Text =
-            DependencyProperty.Register("text", typeof(string), typeof(TMP_InputField), new UnityTMP_InputFieldAdapter());
+            DependencyProperty.Register("text", typeof(string), typeof(TMP_InputField), new TMP_InputFieldAdapter());
 
         public static readonly DependencyProperty CharacterLimit =
-            DependencyProperty.Register("characterLimit", typeof(int), typeof(TMP_InputField), new UnityTMP_InputFieldAdapter());
+            DependencyProperty.Register("characterLimit", typeof(int), typeof(TMP_InputField), new TMP_InputFieldAdapter());
 
         public static readonly DependencyProperty IsInteractable =
-            DependencyProperty.Register("interactable", typeof(bool), typeof(TMP_InputField), new UnityTMP_InputFieldAdapter());
+            DependencyProperty.Register("interactable", typeof(bool), typeof(TMP_InputField), new TMP_InputFieldAdapter());
     }
 
-    public class UnityTMP_InputFieldAdapter : IUIComponentAdapter
+    public class TMP_InputFieldAdapter : IUIComponentAdapter
     {
         public bool CanHandle(object uiObject) => uiObject is TMP_InputField;
 

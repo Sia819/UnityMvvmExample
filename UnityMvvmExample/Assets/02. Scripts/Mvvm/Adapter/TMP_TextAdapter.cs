@@ -13,17 +13,17 @@ namespace Assets._02._Scripts.Mvvm.Adapter
     public static class TMP_TextProperty
     {
         public static readonly DependencyProperty Text =
-            DependencyProperty.Register("text", typeof(string), typeof(TMP_Text), new UnityTMP_TextAdapter());
+            DependencyProperty.Register("text", typeof(string), typeof(TMP_Text), new TMP_TextAdapter());
 
         public static readonly DependencyProperty Color =
-            DependencyProperty.Register("color", typeof(Color), typeof(TMP_Text), new UnityTMP_TextAdapter());
+            DependencyProperty.Register("color", typeof(Color), typeof(TMP_Text), new TMP_TextAdapter());
 
         public static readonly DependencyProperty FontSize =
-            DependencyProperty.Register("fontSize", typeof(float), typeof(TMP_Text), new UnityTMP_TextAdapter());
+            DependencyProperty.Register("fontSize", typeof(float), typeof(TMP_Text), new TMP_TextAdapter());
     }
 
     // TMP_Text Adapter
-    public class UnityTMP_TextAdapter : IUIComponentAdapter
+    public class TMP_TextAdapter : IUIComponentAdapter
     {
         public bool CanHandle(object uiObject) => uiObject is TMP_Text;
 
