@@ -1,11 +1,11 @@
 using UnityEngine;
+using Unity.VisualScripting;
 
-public class UIManager : MonoBehaviour
+[Singleton(Name = "UIManager", Automatic = true, Persistent = true)]
+public class UIManager : MonoBehaviour, ISingleton
 {
-    public MainView mainView;
-
-    private void Awake()
+    public void Func1()
     {
-        
+        Debug.Log("a");
     }
 }

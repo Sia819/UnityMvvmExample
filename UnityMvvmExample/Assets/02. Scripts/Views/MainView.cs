@@ -1,5 +1,5 @@
+using Assets._02._Scripts.Mvvm.Adapter;
 using TMPro;
-using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityMvvmExample.Mvvm;
@@ -7,21 +7,18 @@ using UnityMvvmExample.ViewModels;
 
 public class MainView : ViewBase<MainViewModel>
 {
-    [SerializeField] private TMP_Text resultText;
-    [SerializeField] private TMP_InputField displayNameInput;
-    [SerializeField] private Button applyButton;
+    [Header("Button Text Binding")]
+    [SerializeField] private TMP_Text p1_resultText;
+    [SerializeField] private TMP_InputField p1_displayNameInput;
+    [SerializeField] private Button p1_applyButton;
+
+    [Header("DropDown Binding")]
+    [SerializeField] private TMP_Dropdown p2_dropdown;
 
     private void Start()
     {
-        TwoWayBinding<string>(nameof(ViewModel.Name),
-                              () => displayNameInput.text,
-                              value => displayNameInput.text = value,
-                              displayNameInput.onValueChanged);
-
-        OneWayBinding<string>(nameof(ViewModel.DisplayName),
-                              value => resultText.text = value);
-
-        CommandBinding(applyButton.onClick, 
-                       () => ViewModel.ApplyCommand.Execute(null));
+        p1_resultText.SetBinding(TMP_TextProperty.Text, nameof(ViewModel.DisplayName));
+        p1_displayNameInput.SetBinding(TMP_InputFieldProperty.Text, nameof(ViewModel.Name));
+        p1_applyButton.SetCommand(ViewModel.ApplyCommand);
     }
 }
