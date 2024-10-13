@@ -36,7 +36,7 @@ namespace UnityMvvmExample.Mvvm
             throw new InvalidOperationException($"Property {property.Name} not supported for Button");
         }
 
-        public void SubscribeToValueChanged(object uiObject, DependencyProperty property, Action updateSourceAction)
+        public void SubscribeToValueChanged(object uiObject, DependencyProperty property, Binding binding, Action updateSourceAction)
         {
             // Buttons typically don't have properties that change from the UI side
             // If needed, you could add listeners here

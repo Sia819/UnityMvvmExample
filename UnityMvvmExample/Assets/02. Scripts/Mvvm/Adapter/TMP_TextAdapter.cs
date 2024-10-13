@@ -51,7 +51,7 @@ namespace Assets._02._Scripts.Mvvm.Adapter
             throw new InvalidOperationException($"Property {property.Name} not supported for TMP_Text");
         }
 
-        public void SubscribeToValueChanged(object uiObject, DependencyProperty property, Action updateSourceAction)
+        public void SubscribeToValueChanged(object uiObject, DependencyProperty property, Binding binding, Action updateSourceAction)
         {
             // TMP_Text doesn't have built-in events for property changes
             // If needed, you could implement a custom solution here

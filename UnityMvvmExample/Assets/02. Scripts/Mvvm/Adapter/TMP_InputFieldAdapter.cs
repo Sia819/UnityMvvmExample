@@ -49,7 +49,7 @@ namespace UnityMvvmExample.Mvvm
             throw new InvalidOperationException($"Property {property.Name} not supported for TMP_InputField");
         }
 
-        public void SubscribeToValueChanged(object uiObject, DependencyProperty property, Action updateSourceAction)
+        public void SubscribeToValueChanged(object uiObject, DependencyProperty property, Binding binding, Action updateSourceAction)
         {
             var tmpInputField = (TMP_InputField)uiObject;
             if (property == TMP_InputFieldProperty.Text)

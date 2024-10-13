@@ -29,7 +29,7 @@ namespace UnityMvvmExample.Mvvm
             var bindingExpression = new BindingExpression(dataContext, binding, sourceProperty, updateTargetAction, getTargetValueFunc);
             bindingExpression.UpdateTarget(); // Initial update
 
-            adapter.SubscribeToValueChanged(uiComponent, dp, bindingExpression.UpdateSource);
+            adapter.SubscribeToValueChanged(uiComponent, dp, binding, bindingExpression.UpdateSource);
 
             return bindingExpression;
         }

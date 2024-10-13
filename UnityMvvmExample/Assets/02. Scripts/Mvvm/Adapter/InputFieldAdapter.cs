@@ -32,7 +32,7 @@ namespace UnityMvvmExample.Mvvm
             throw new InvalidOperationException($"Property {property.Name} not supported for InputField");
         }
 
-        public void SubscribeToValueChanged(object uiObject, DependencyProperty property, Action updateSourceAction)
+        public void SubscribeToValueChanged(object uiObject, DependencyProperty property, Binding binding, Action updateSourceAction)
         {
             var inputField = (InputField)uiObject;
             if (property.Name == "text")
