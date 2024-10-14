@@ -1,4 +1,3 @@
-using Assets._02._Scripts.Mvvm.Adapter;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;

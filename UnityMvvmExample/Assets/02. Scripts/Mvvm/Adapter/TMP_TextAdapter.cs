@@ -7,7 +7,7 @@ using TMPro;
 using UnityEngine;
 using UnityMvvmExample.Mvvm;
 
-namespace Assets._02._Scripts.Mvvm.Adapter
+namespace UnityMvvmExample.Mvvm
 {
     // TMP_Text Property
     public static class TMP_TextProperty
